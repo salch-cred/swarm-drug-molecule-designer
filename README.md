@@ -6,3 +6,14 @@ A generative algorithm utilizing multi-agent Ant Colony Optimization (ACO) algor
 ```bash
 python examples/design_molecule.py
 ```
+
+
+## FastAPI API Service
+The project includes a FastAPI server wrapper. 
+
+### Running the API
+```bash
+uvicorn src.api:app --host 0.0.0.0 --port 8000
+```
+- **Interactive docs**: Navigate to `/docs` for swagger documentation.
+- **POST `/optimize`**: Seek configuration structures using ACO optimization.
